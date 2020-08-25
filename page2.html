@@ -8,7 +8,21 @@
 <body>
    <header>
        <h1>Welcome to Movie Park</h1>
-   </header> 
+       <div>
+         <p><b><span lang="ar-sa">Love Test</span></b></p><font color="#000099" face="Tahoma" size="2">
+            Love test between tow people... Write the names and press calcolate
+            <span lang="ar-sa">Names written in English only...</span>.</font>
+            <FORM name="loveform">
+              <P><INPUT value="name1" name="name1" type="text" size="20">  + 
+              <INPUT
+              value="name2" name="name2" type="text" size="20">  = <INPUT value name="output" type="text" size="6"> <BR>
+              <BR>
+              <INPUT value="Calcolate" name="calculate" type="button" value="calculate"
+              onclick="calc()"> </P>
+              </FORM>
+        </div>
+   </header>
+   <script src="javascript.js"></script> 
    <main>
       <section> 
           <a href='https://www.amazon.com/dp/B076HQM822/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B076HQM822&pd_rd_w=SmPxx&pf_rd_p=48d372c1-f7e1-4b8b-9d02-4bd86f5158c5&pd_rd_wg=BMTGw&pf_rd_r=SK27H8PWZ6WQDSVH9NT6&pd_rd_r=37da2d5d-fd26-4703-8843-48dae24e339b&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzN0lUVEtIRzVJN0FSJmVuY3J5cHRlZElkPUEwNTMxODYxN0NXNk9MUUpWM0pCJmVuY3J5cHRlZEFkSWQ9QTA0MDc3MjYzNVUwSVREQTdSMVI2JndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==&tag=coa_row-20'><img src='spiderman.jpg' ></a>
@@ -24,12 +38,35 @@
 </section>
 <h3><a href='https://abuhajer.github.io/MoviePark1/MainPage.html
     ' >Back</a></h3>
+
    </main>
    <footer>
        <p class="fn">Copy Right Received</p>
        <p class="fn">Contact us  </p>
 <p class="fn">Email : MovirePark@MovirePark.com</p>
-
+<div align="center">
+    <form name="f">
+    <table border="1">
+    <tr>
+    <td colspan="3" align="center" bgcolor="#ff0000">أحمر</td>
+    <td colspan="3" align="center" bgcolor="#00ff00">أخضر</td>
+    <td colspan="3" align="center" bgcolor="#000ff">أزرق</td>
+    </tr>
+    <tr>
+    <td><input type="button" name="rm" value="<" onclick = "color(this.form, 'Red' , -1);"></td>
+    <td><input type="button" name="الأحمر" value="AF" onclick = "setval(this);"></td>
+    <td><input type="button" name="rp" value=">" onclick = "color(this.form, 'Red', 1);"></td>
+    <td><input type="button" name="gm" value="<" onclick = "color(this.form, 'Green', -1);"></td>
+    <td><input type="button" name="الأخضر" value="BF" onclick = "setval(this);"></td>
+    <td><input type="button" name="gp" value=">" onclick = "color(this.form, 'Green', 1);"></td>
+    <td><input type="button" name="bm" value="<" onclick = "color(this.form, 'Blue', -1);"></td>
+    <td><input type="button" name="الأزرق" value="CF" onclick = "setval(this);"></td>
+    <td><input type="button" name="bp" value=">" onclick = "color(this.form, 'Blue', 1);"></td>
+    </tr>
+    </table>
+    </form>
+    </div>
+      
    </footer>
 </body>
 </html>
