@@ -85,3 +85,16 @@ function setval(myitem) {
           }
       }
 }
+ var userInput = prompt('Please vote to your favorite movie');
+
+
+ var i = l ;
+var msg = ' ' ;
+// Set counter to 1
+// Message
+// Store 5 times tabl e in a variable
+while (i < 10) {
+msg += i + ' x 5 = ' + (i * 5) + '<br I>';
+i++;
+}
+document.getElementByid('answer').innerHTML = msg; 
